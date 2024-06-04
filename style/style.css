@@ -2,7 +2,7 @@
 
 .intro {
     min-height: 100vh;
-    background-image: url(/assets/building.png);
+    background-image: url(assets/building.png);
     background-size: cover;
 }
 
