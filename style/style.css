@@ -1,0 +1,176 @@
+/* intro */
+
+.intro {
+    min-height: 100vh;
+    background-image: url(/assets/building.png);
+    background-size: cover;
+}
+
+.navi {
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.navi:hover {
+    text-decoration: none !important;
+    color: var(--color-red) !important;
+}
+
+.people {
+    bottom: 0;
+    right: 0;
+    max-width: 43%;
+}
+
+.home-logo {
+    width: 49%;
+}
+
+.home-tagline {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 300 !important;
+    font-style: italic;
+}
+
+.home-tagline span {
+    font-size: 60px;
+    margin: 5vh 0 0 12vw;
+    line-height: 100px;
+    color: var(--color-dark-gray);
+}
+/* intro end */
+
+/* welcome */
+
+.welcome-row {
+    background-color: var(--bg-gray);
+    padding: 30px 40px;
+    min-height: 100vh;
+}
+
+.welcome-col {
+    border-top-left-radius: 140px;
+    border-bottom-right-radius: 140px;
+    padding: 7.5% 20%;
+}
+
+.welcome-col .welcome-title {
+    font-size: 55px;
+    color: var(--color-dark-gray);
+    font-weight: bold;
+}
+
+.welcome-col .welcome-desc {
+    margin-top: 7.5%;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+/* welcome end */
+
+/* why */
+
+.why {
+    min-height: 100vh;
+    background-color: var(--bg-gray);
+    padding: 15%;
+}
+
+.why-left {
+
+}
+
+.why-left img {
+    max-width: 90%;
+}
+
+.why-right {
+    height: 100%;
+    padding-left: 5%;
+}
+
+.why-right div img {
+    max-width: 70%;
+    margin-bottom: 20%;
+}
+
+.why-right div span {
+    font-size: 20px;
+}
+
+/* why end */
+
+/* service */
+
+.service-row {
+    background: rgb(225,225,225);
+    background: linear-gradient(180deg, rgba(225,225,225,1) 0%, rgba(130,27,28,1) 100%);
+    padding: 30px 40px;
+    min-height: 100vh;
+}
+
+.service-col {
+    border-bottom-left-radius: 140px;
+    border-top-right-radius: 140px;
+    padding: 7.5% 12%;
+    background-color: var(--color-dark-gray);
+}
+
+.service-title {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.service-desc {
+    padding: 0 3%;
+    margin: 28px 0 55px 0;
+    font-size: 23px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+}
+
+.service-item span {
+    font-size: 20px;
+    font-family: "Source Serif 4", sans-serif;
+}
+
+.service-cont {
+    margin-bottom: 46px;
+}
+
+.service-col button {
+    width: 25%;
+    background-color: #EBE3D5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: var(--color-dark-gray);
+    box-shadow: none;
+    border: none;
+    padding: 14px;
+    border-radius: 50px;
+}
+
+/* service end */
+
+/* global below */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --color-red: #821B1C;
+    --color-dark-gray: #332C30;
+    --color-light-gray: #D7D7D7;
+    --color-lightest-gray: #F4F4F4;
+    --color-gray: #9D9696;
+    --color-gold: #D4AF37;
+    --bg-gray: #E1E1E1;
+}
+
+html {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
