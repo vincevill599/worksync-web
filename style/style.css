@@ -171,7 +171,8 @@
     --bg-gray: #E1E1E1;
 }
 
-html {
+html,
+body {
     overflow-x: hidden;
     max-width: 100vw;
 }
