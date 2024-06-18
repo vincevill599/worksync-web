@@ -23,7 +23,7 @@
 }
 
 .home-logo {
-    width: 49%;
+    width: 15vmax;
 }
 
 .home-tagline {
@@ -255,6 +255,199 @@
 }
 
 /* footer end */
+
+/* reso breakpoints */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .homenav,
+    .people {
+        display: none !important;
+    }
+
+    .home-tagline span {
+        font-size: 38pt;
+        line-height: 80px;
+        margin: 10vh 0 0 0;
+    }
+
+    .welcome-col .welcome-title {
+        font-size: 25pt !important;
+    }
+
+    .welcome-col .welcome-desc {
+        font-size: 12pt !important;
+        text-align: left !important;
+        margin-top: 30px;
+    }
+    
+    .welcome-row {
+        padding: 2vh 8%;
+    }
+
+    .welcome-row img {
+        width: 90%;
+    }
+
+    .why-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .why-right {
+        width: 100% !important;
+        padding: 0 17%;
+        margin-bottom: 3vh;
+    }
+
+    .why-right div span {
+        text-align: right;
+        width: 100%;
+        font-size: 12pt;
+        margin-top: 18px;
+    }
+
+    .why {
+        padding: 2vh 0;
+        min-height: fit-content !important;
+        max-height: fit-content !important;
+    }
+
+    .why-right div img {
+        display: none;  
+    }
+
+    .why-left {
+        justify-content: flex-end !important;
+        padding: 0 8%;
+    }
+
+    .why-left img {
+        max-width: 50%;
+    }
+
+    .service-title {
+        font-size: 24pt;
+    }
+
+    .service-desc {
+        font-size: 12pt;
+        text-align: left !important;
+        line-height: 24px;
+    }
+
+    .service-row {
+        padding: 0 35px;
+    }
+
+    .service-row button {
+        display: none;
+    }
+
+    .service-cont {
+        display: none !important;
+    }
+
+    .service-col {
+        padding: 7.5% 10%;
+    }
+
+    .mobile-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5vh 0;
+    }
+
+    .mobile-item img {
+        margin-bottom: 10px;
+    }
+
+    .mobile-item span {
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        text-align: center !important;
+    }
+
+    .footer {
+
+    }
+
+    .footer-nav,
+    .socmed,
+    .footer-left_image {
+        display: none !important;
+    }
+
+    .footer1 {
+        order: 2
+    }
+
+    .footer2{
+        order: 1;
+        align-items: center;
+    }
+
+    .footer-map {
+        width: 100%;
+    }
+
+    .footer-right_title {
+        font-size: 25pt;
+    }
+
+    .footer-right_row div input,
+    .footer-right_row div textarea {
+        width: 100% !important;
+    }
+
+    .footer-right_row div input {
+        height: 3.5vh;
+    }
+
+    .input-cont,
+    .input-cont-6 {
+        align-items: flex-start !important;
+    }
+
+    .button-cont {
+        justify-content: center !important;
+    }
+
+    .button-cont i {
+        display: none;
+    }
+
+    .button-cont button {
+        margin: 2vh 2vh 4vh 2vh;
+        background-color: var(--font-gold);
+        height: fit-content;
+        color: var(--color-dark-gray);
+        padding: 7px 27.5px;
+        border: 0;
+        border-radius: 14px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {
+}
+
+/* breakpoints end */
 
 /* global below */
 
