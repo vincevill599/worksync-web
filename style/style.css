@@ -246,12 +246,22 @@
     color: var(--font-gold);
 }
 
-.button-cont {
-    color: var(--font-gold);
+.button-cont button {
+    margin: 2vh 2vh 4vh 2vh;
+    background-color: var(--font-gold);
+    height: fit-content;
+    color: var(--color-dark-gray);
+    padding: 7px 27.5px;
+    border: 0;
+    border-radius: 14px;
 }
 
 .button-cont span {
     margin-left: 12px;
+}
+
+.mobile-service {
+    display: none !important;
 }
 
 /* footer end */
@@ -260,14 +270,21 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+
+    /* Make header sticky and same with mayes */
+    
+    .intro {
+        min-height: 67vh;
+    }
+
     .homenav,
     .people {
         display: none !important;
     }
 
     .home-tagline span {
-        font-size: 38pt;
-        line-height: 80px;
+        font-size: 29pt;
+        line-height: 57px;
         margin: 10vh 0 0 0;
     }
 
@@ -351,6 +368,10 @@
 
     .service-col {
         padding: 7.5% 10%;
+    }
+
+    .mobile-service {
+        display: flex !important;
     }
 
     .mobile-item {
@@ -469,6 +490,7 @@
 html,
 body {
     overflow-x: hidden;
-    max-width: 100vw;
+    min-width: 100vw;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }

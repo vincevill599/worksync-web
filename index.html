@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorkSync Solutions Corp</title>
+    <link rel="icon" href="/assets/favicon.ico">
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -35,10 +36,10 @@
                 <img src="assets/worksync-logo.png" class="home-logo">
             </div>
             <div class="homenav col-6 d-flex justify-content-start pl-5">
-                <a href="" class="navi text-muted ml-5">SERVICES</a>
-                <a href="" class="navi text-muted ml-5">INQUIRIES</a>
-                <a href="" class="navi text-muted ml-5">JOIN US</a>
-                <a href="" class="navi text-muted ml-5">ABOUT US</a>
+                <a href="#service" class="navi text-muted ml-5">SERVICES</a>
+                <a href="#footer" class="navi text-muted ml-5">INQUIRIES</a>
+                <a href="#service-top" class="navi text-muted ml-5">JOIN US</a>
+                <a href="#welcome" class="navi text-muted ml-5">ABOUT US</a>
             </div>
         </div>
 
@@ -53,7 +54,7 @@
 
     <!-- Welcome -->
 
-    <section class="welcome">
+    <section class="welcome" id="welcome">
         <div class="welcome-row row">
             <div class="col-12 welcome-col bg-white d-flex align-items-center justify-content-center flex-column">
                 <span class="welcome-title">
@@ -73,7 +74,7 @@
 
     <!-- Why choose us -->
 
-    <section class="why position-relative">
+    <section class="why position-relative" id="why">
         <!-- <img src="assets/why-carry.png" class="carry position-absolute"> -->
         <div class="row why-row">
             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 why-left d-flex align-items-end justify-content-center">
@@ -81,8 +82,8 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 why-right">
                 <div class="d-flex flex-column justify-between align-items-center w-100">
+                    <img src="assets/question-mark.png">
                     <span>
-                        <img src="assets/question-mark.png">
                         At WorkSync Solutions Corp., we are dedicated to understanding the <strong>unique needs of our clients</strong> and delivering tailored solutions that drive success. 
                         <br> <br>
                         Join us in experiencing staffing solutions that are effective, and aligned with the demands of the modern workplace.
@@ -91,6 +92,8 @@
             </div>
         </div>
     </section>
+
+    <section class="service-top" id="service-top"></section>
 
     <!-- Services -->
 
@@ -136,19 +139,19 @@
                     <div class="col-6 mobile-item">
                         <img src="assets/mobile-service.png">
                         <span>
-                            QUALITY LINE INSPECTION
+                            PACKING/SORTING
                         </span>
                     </div>
                     <div class="col-6 mobile-item">
                         <img src="assets/mobile-service.png">
                         <span>
-                            QUALITY LINE INSPECTION
+                            WAREHOUSING
                         </span>
                     </div>
                     <div class="col-6 mobile-item">
                         <img src="assets/mobile-service.png">
                         <span>
-                            QUALITY LINE INSPECTION
+                            ENGINEERING MAINTENANCE
                         </span>
                     </div>
                 </div>
@@ -162,18 +165,18 @@
 
     <!-- Footer -->
 
-    <section class="footer">
+    <section class="footer" id="footer">
         <div class="row footer-row">
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 footer-left d-flex justify-content-start align-items-start flex-column">
                 <div class="footer-nav d-flex flex-column mb-4">
                     <span class="footer-nav-item mb-2">
-                        <a href="">ABOUT US</a>
+                        <a href="#welcome">ABOUT US</a>
                     </span>
                     <span class="footer-nav-item mb-2">
-                        <a href="">SERVICES</a>
+                        <a href="#service-top">SERVICES</a>
                     </span>
                     <span class="footer-nav-item mb-2">
-                        <a href="">JOIN US</a>
+                        <a href="#why">JOIN US</a>
                     </span>
                 </div>
 
@@ -236,7 +239,6 @@
                     </div>
                     </div>
                     <div class="col-12 button-cont d-flex mb-3 justify-content-end">
-                        <i class="bi bi-send-fill"></i>
                         <button>SEND INQUIRY</button>
                     </div>
                 </div>
