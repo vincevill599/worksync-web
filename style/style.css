@@ -266,6 +266,79 @@
 
 /* footer end */
 
+/* JOIN US PAGE START */
+
+/* banner */
+
+.banner {
+    background-image: url("../assets/join-mask.png");
+    height: 41vh;
+    background-size: cover;
+    border-top-left-radius: 240px;
+    border-bottom-right-radius: 240px;
+}
+
+.banner:after {
+    content: '\200b';
+}
+
+/* banner end */
+
+/* join */
+
+.join-title {
+    padding: 6vh 8vw;
+}
+
+.main-join {
+    color: var(--color-dark-gray);
+
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    font-size: 60px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 0.95em;
+}
+
+.sub {
+    font-family: "Source Serif 4", serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.desc-join {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin-top: 12px;
+    font-weight: 300;
+}
+
+.offering {
+    padding: 10vh 20vw;
+}
+
+.job-title {
+    color: var(--color-red);
+    font-family: "Source Serif 4", serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.job-sub {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+/* join end */
+
+/* JOIN US PAGE END */
+
 /* reso breakpoints */
 
 /* Small devices (landscape phones, 576px and up) */
@@ -390,10 +463,6 @@
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
         text-align: center !important;
-    }
-
-    .footer {
-
     }
 
     .footer-nav,
