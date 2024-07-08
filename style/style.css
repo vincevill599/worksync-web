@@ -320,7 +320,7 @@
 }
 
 .offering {
-    padding: 10vh 20vw;
+    padding: 15vh 20vw;
 }
 
 .job-title {
@@ -338,6 +338,38 @@
 /* join end */
 
 /* JOIN US PAGE END */
+
+/* ABOUT US PAGE START */
+
+.about-title,
+.about-us {
+    padding: 3vh 10vw;
+}
+
+.about-title_text {
+    font-family: "Source Serif 4", serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.about-subtitle {
+    font-size: 25px;
+    color: var(--color-red);
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+}
+
+.about-desc {
+    font-size: 15px;
+}
+
+.about-image_first,
+.about-image_second {
+    width: 83%;
+}
+
+/* ABOUT US PAGE END */
 
 /* reso breakpoints */
 
@@ -518,6 +550,69 @@
         padding: 7px 27.5px;
         border: 0;
         border-radius: 14px;
+    }
+
+    /* join us mobile */
+
+    .banner {
+        height: 10vh;
+        border-top-left-radius: 20% 40%;
+        border-bottom-right-radius: 20% 40%;
+    }
+
+    .main {
+        font-size: 40px;
+    }
+
+    .sub {
+        font-size: 23px;
+    }
+
+    .desc-join {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 18px;
+    }
+
+    .right-job {
+        order: 2;
+    }
+
+    .right-image {
+        order: 1;
+    }
+
+    .offering {
+        padding: 2vh 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .offering div {
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .job-sub {
+        width: 100%;
+        border: solid 1px black;
+        padding: 6px;
+        border-radius: 30px;
+        margin: 8px 0;
+        font-size: 15px;
+    }
+
+    .job-title {
+        font-size: 23px;
+    }
+
+    .join-image img {
+        max-width: 55%;
+    }
+
+    .join-image {
+        justify-content: center !important;
+        margin: 8vh 0;
     }
 }
 
