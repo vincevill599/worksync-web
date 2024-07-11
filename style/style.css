@@ -75,7 +75,7 @@
 .why {
     min-height: 100vh;
     background-color: var(--bg-gray);
-    padding: 15%;
+    padding: 7% 10%;
 }
 
 .carry {
@@ -89,7 +89,7 @@
 
 .why-right {
     height: 100%;
-    padding-left: 5%;
+    padding-left: 8%;
 }
 
 .why-right div img {
@@ -97,8 +97,24 @@
     margin-bottom: 20%;
 }
 
-.why-right div span {
-    font-size: 20px;
+.why-left span {
+    font-size: 25px;
+}
+
+.why-title {
+    font-size: 25px;
+    font-weight: 800;
+    font-family: "Lato", sans-serif;
+}
+
+.why-list {
+    font-size: 17.3px;
+    font-weight: 200;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+.why-item {
+    margin: 8px 0;
 }
 
 /* why end */
@@ -419,15 +435,8 @@
 
     .why-right {
         width: 100% !important;
-        padding: 0 17%;
+        padding: 0 12%;
         margin-bottom: 3vh;
-    }
-
-    .why-right div span {
-        text-align: right;
-        width: 100%;
-        font-size: 12pt;
-        margin-top: 18px;
     }
 
     .why {
@@ -442,11 +451,27 @@
 
     .why-left {
         justify-content: flex-end !important;
-        padding: 0 8%;
+        padding: 0 12%;
     }
 
     .why-left img {
         max-width: 50%;
+    }
+
+    .why-title {
+        text-align: left !important;
+        width: 100%;
+        font-size: 12pt;
+        margin-top: 32px;
+    }
+
+    .why-desc {
+        font-size: 15px !important;
+        margin-top: 0 !important;
+    }
+
+    .carry {
+        display: none !important;
     }
 
     .service-title {
@@ -495,6 +520,67 @@
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
         text-align: center !important;
+    }
+
+    .about-us_row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us_row > :nth-child(2) {
+        order: 3;
+    }
+    
+    .about-us_row > :nth-child(3) {
+        order: 2;
+    }
+
+    .about-us_row > :nth-child(4) {
+        order: 5;
+    }
+
+    .about-us_row > :nth-child(5) {
+        order: 4;
+    }
+    
+    .about-title_mobile {
+        display: contents !important;
+        font-family: "Source Serif 4", serif;
+        font-style: italic;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .about-title_text {
+        display: none;
+    }
+
+    .about-image_first {
+        width: 100%;
+        height: 70%;
+        margin-top: 18px;
+    }
+
+    .about-image_second {
+        width: 100%;
+    }
+
+    .about-subtitle,
+    .about-desc {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .about-desc {
+        line-height: 30px;
+    }
+
+    .mission-vision {
+        align-items: center !important;
+    }
+
+    .values {
+        justify-content: center !important;
     }
 
     .footer-nav,
