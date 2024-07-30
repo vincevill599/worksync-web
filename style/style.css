@@ -786,6 +786,58 @@
         justify-content: center !important;
         margin: 8vh 0;
     }
+
+    #carouselExample,
+    .carousel-button {
+        display: none !important;
+    }
+
+    .carousel-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-title span {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .desktop-desc {
+        display: none !important;
+    }
+
+    .mobile-desc {
+        display: block !important;
+        text-align: center;
+        font-size: 18px !important;
+    }
+
+    .card-div {
+        background-color: #d9d9d9;
+        border-radius: 17px;
+        padding: 20px 30px;
+        height: fit-content;
+    }
+    
+    .card-img-top {
+       height: 190px;
+        border-radius: 8.65px 71.1px 8.65px 8.65px;
+    }
+
+    .card-body {
+        padding: 21px 0 0 0;
+    }
+
+    .card-title {
+        font-size: 21px;
+        margin-bottom: 8px;
+    }
+
+    .card-text {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
