@@ -186,7 +186,10 @@
 
     <section class="service">
         <div class="row service-row">
-            <div class="col-12 service-col d-flex flex-column align-items-center justify-content-center">
+            <div class="col-12 service-col d-flex flex-column align-items-center justify-content-center"
+                id="service-col">
+                <button class="expander-button" id="expander-button" onclick="toggleSection()">
+                </button>
                 <span class="service-title text-white">
                     SERVICES OFFERED
                 </span>
@@ -243,11 +246,31 @@
                             ENGINEERING MAINTENANCE
                         </span>
                     </div>
+                    <div class="col-6 mobile-item">
+                        <img src="assets/mobile-service.png">
+                        <span>
+                            SERVICES DUMMY
+                        </span>
+                    </div>
+                    <div class="col-6 mobile-item">
+                        <img src="assets/mobile-service.png">
+                        <span>
+                            SERVICES DUMMY
+                        </span>
+                    </div>
+                    <div class="col-12 mobile-item mb-5">
+                        <img src="assets/mobile-service.png">
+                        <span>
+                            SERVICES DUMMY
+                        </span>
+                    </div>
                 </div>
 
                 <button>
                     LEARN MORE
                 </button>
+
+                <div class="serviceback" id="serviceback"></div>
             </div>
         </div>
     </section>

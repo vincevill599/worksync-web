@@ -712,7 +712,32 @@
     }
 
     .service-row {
-        padding: 0 35px;
+        padding: 20px 35px;
+        display: flex;
+        min-height: fit-content;
+    }
+
+    .serviceback {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 125px;
+        background: -moz-linear-gradient(top, rgba(137, 255, 241, 0) 0%, var(--color-dark-gray) 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(137, 255, 241, 0)), color-stop(100%, var(--color-dark-gray)));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(137, 255, 241, 0) 0%, var(--color-dark-gray) 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(137, 255, 241, 0) 0%, var(--color-dark-gray) 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(137, 255, 241, 0) 0%, var(--color-dark-gray) 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, rgba(137, 255, 241, 0) 0%, var(--color-dark-gray) 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0089fff1', endColorstr='#000000', GradientType=0);
+        /* IE6-9 */
+        transition: opacity 0.5s ease-in-out;
     }
 
     .service-row button {
@@ -724,7 +749,25 @@
     }
 
     .service-col {
-        padding: 7.5% 10%;
+        position: relative;
+        padding: 12% 13%;
+        border-bottom-left-radius: 0;
+        /* max-height: 85vh; */
+        justify-content: flex-start !important;
+        overflow: hidden; 
+        transition: max-height 1s ease-in-out;
+    }
+
+    .service-col.expanded {
+        /* max-height: 120vh; */
+        transition: max-height 1s ease-in-out;
+    }
+
+    .expander-button {
+        position: absolute;
+        bottom: 20px;
+        z-index: 999;
+        display: inline-block !important;
     }
 
     .mobile-service {
