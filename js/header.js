@@ -8,7 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
     var gradient = document.getElementById("serviceback");
     button.innerHTML = '<i class="bi bi-chevron-down"></i>';
     gradient.style.display = "inline-block";
-    section.style.maxHeight = "85vh";
+    
+    if(window.innerWidth < 992) {
+        section.style.maxHeight = "65vh";
+    } else {
+        section.style.maxHeight = "fit-content !important";
+    }
 
     // Close the navbar when the close button is clicked
     document.querySelector('.close-btn').addEventListener('click', function () {
@@ -47,13 +52,18 @@ function toggleSection() {
     section.classList.toggle("expanded");
 
     // Change button text
-    if (section.classList.contains("expanded")) {
-        button.innerHTML = '<i class="bi bi-chevron-up"></i>';
-        section.style.maxHeight = section.scrollHeight + "px";
-        gradient.style.opacity = "0%";
-    } else {
-        button.innerHTML = '<i class="bi bi-chevron-down"></i>';
-        gradient.style.opacity = "100%";
-        section.style.maxHeight = "85vh";
+    if(window.innerWidth < 992) {
+        console.log("small window")
+        if (section.classList.contains("expanded")) {
+            button.innerHTML = '<i class="bi bi-chevron-up"></i>';
+            section.style.maxHeight = section.scrollHeight + "px";
+            gradient.style.opacity = "0%";
+        } else if (window.innerWidth < 992) {
+            button.innerHTML = '<i class="bi bi-chevron-down"></i>';
+            gradient.style.opacity = "100%";
+            section.style.maxHeight = "65vh";
+        }   else {
+            section.style.maxHeight = "fit-content";
+        }
     }
 }
