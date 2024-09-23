@@ -76,7 +76,7 @@
 .why {
     min-height: 100vh;
     background-color: var(--bg-gray);
-    padding: 7% 10%;
+    padding: 7% 10% 14vmax 10%;
 }
 
 .carry {
