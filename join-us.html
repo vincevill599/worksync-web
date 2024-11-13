@@ -29,6 +29,16 @@
 
     <!-- Custom CSS -->
     <link href="style/style.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "ZCdYSZCInxU7ukQ0G",
+            });
+        })();
+    </script>
+    <script src="js/email.js"></script> -->
 </head>
 
 <body>
@@ -295,27 +305,27 @@
                 <div class="footer-right_row row d-flex justify-content-end">
                     <div class="col-12 input-cont d-flex mb-3">
                         <span>NAME*</span>
-                        <input type="text">
+                        <input id="name" type="text">
                     </div>
                     <div class="col-12 input-cont d-flex mb-3">
                         <span>COMPANY*</span>
-                        <input type="text">
+                        <input id="company" type="text">
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 input-cont-6 d-flex mb-3">
                         <span>CONTACT NUMBER*</span>
-                        <input type="text">
+                        <input id="contact_no" type="text">
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 input-cont-6 d-flex mb-3">
                         <span>EMAIL*</span>
-                        <input type="text">
+                        <input id="email" type="text">
                     </div>
                     <div class="col-12 input-cont d-flex mb-3">
                         <span>MESSAGE*</span>
-                        <textarea></textarea>
+                        <textarea id="message"></textarea>
                     </div>
                 </div>
                 <div class="col-12 button-cont d-flex mb-3 justify-content-end">
-                    <button>SEND INQUIRY</button>
+                    <button onclick="sendMail()">SEND INQUIRY</button>
                 </div>
             </div>
         </div>
